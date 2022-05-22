@@ -15,8 +15,8 @@
 /start или /help- Приветствие
 # Команды Админа
 /info - Информация о пользователе
-*
-*
+
+
 #vars
 TG_BOT_TOKEN - Your Bot Token
 APP_ID - Your APP ID
