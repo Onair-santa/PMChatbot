@@ -11,17 +11,15 @@
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/anvikVRN/PMChatbot-RU)
 
-### 💠 Bot Commands
-
 # Команды пользователя
 /start или /help- Приветствие
 # Команды Админа
 /info - Информация о пользователе
 
 #vars
-TG_BOT_TOKEN - Your Bot Token
-APP_ID - Your APP ID
-API_HASH - Your API Hash
+TG_BOT_TOKEN - Your Bot Token.
+APP_ID - Your APP ID.
+API_HASH - Your API Hash.
 ADMIN - Admin User Id.
 
 Благодарность
