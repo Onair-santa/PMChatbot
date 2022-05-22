@@ -1,32 +1,22 @@
-# 🤖 PM Chat Bot 🤖
-A Simple Bot that can be used as a personal assistant for managing Personal Messages.
-
+# 🤖 PMChatBot-RU 🤖
+Простой бот персональных сообщений
 ### 💠 HELP
-In the busy schedules of Noobs, it can't accept receiving Personal messages from unwanted or unnecessary
-users all time. This bot is a solution for the problem. All the personal messages can be managed through
-this bot, and our personal chat will be safe and clean.
+Пользователи общаются с вами через бота, ваши данные скрыты и ответы приходят от бота.
+Ваш личный чат не забивается ненужными контактами и сообщениями.
+- Пользователи могут писать сообщения и присылать файлы.
+- Admin отвечает в боте методом *Ответить* **reply to the message** 
+- Команда `/info` - более полная информация о написавшем сообщение.(Admin Only)
 
 ### Deploying on Heroku:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/m4mallu/PMChatbot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/anvikVRN/PMChatbot-RU)
 
-### 💠 USAGE
+### 💠 Bot Commands
 
-- Users can pm to the bot via text or media messages.
-- Bot will send the message to the admin user id as pm.
-- Admin need to reply as **reply to the message** received in the bot (Text & Media)
-- The replied message will be sent to the user as pm in the bot.
-- Command ```/info``` as a reply to any chat received will give the basic info about the Pm user.(Admin Only)
-
-
-### 💠 Bot Commands 
-
-```
-# User Commmands
-/start or /help- Start Message
-
-# Admin Commmands
-/info - Basic Information about the user
+# Команды пользователя
+/start или /help- Приветствие
+# Команды Админа
+/info - Информация о пользователе
 
 #vars
 TG_BOT_TOKEN - Your Bot Token
@@ -34,6 +24,5 @@ APP_ID - Your APP ID
 API_HASH - Your API Hash
 ADMIN - Admin User Id.
 
-```
-### 💠 Credits
-[DAN](https://t.me/haskell) for his [Pyrogram](https://github.com/pyrogram/pyrogram) Library
+Благодарность
+[m4mallu](https://github.com/m4mallu/PMChatbot)
