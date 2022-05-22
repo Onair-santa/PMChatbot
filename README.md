@@ -10,7 +10,7 @@
 ### Deploying on Heroku:
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/anvikVRN/PMChatbot-RU)
-
+```
 # Команды пользователя
 /start или /help- Приветствие
 # Команды Админа
@@ -22,6 +22,6 @@ TG_BOT_TOKEN - Your Bot Token
 APP_ID - Your APP ID
 API_HASH - Your API Hash
 ADMIN - Admin User Id.
-
+```
 Благодарность
 [m4mallu](https://github.com/m4mallu/PMChatbot)
