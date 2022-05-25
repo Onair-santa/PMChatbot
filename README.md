@@ -8,20 +8,29 @@
 - Команда `/info` - более полная информация о написавшем сообщение.(Admin Only)
 
 # Deploying on Heroku:
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/anvikVRN/PMChatbot-RU)
+# Linux VPS:
+- Создать папку бота на сервере и скопировать туда файлы бота
+- Переименовать sample_config.py в config.py и вставить свои данные токенов и ID владельца бота
+```
+    TG_BOT_TOKEN = "TG_BOT_TOKEN"  # Взять в боте @BotFather
+    APP_ID = APP_ID                # Взять(создать) на сайте https://my.telegram.org
+    API_HASH = "API_HASH"          # Взять(создать) на сайте https://my.telegram.org
+    ADMIN = ID_OWNER               # ID юзера, владельца бота. Посмотреть в @username_to_id_bot 
+```    
+```
+apt install virtualenv
+virtualenv -p python3 venv
+. ./venv/bin/activate
+pip3 install -r requirements.txt
+python3 bot.py
+```
 ```
 # Команды пользователя
 /start или /help - Приветствие
 # Команды Админа
 /info - Информация о пользователе
-
-
-#vars
-TG_BOT_TOKEN - Your Bot Token
-APP_ID - Your APP ID
-API_HASH - Your API Hash
-ADMIN - Admin User Id.
 ```
+
 Благодарность
 [m4mallu](https://github.com/m4mallu/PMChatbot)
