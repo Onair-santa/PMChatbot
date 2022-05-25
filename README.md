@@ -17,13 +17,14 @@
     APP_ID = APP_ID                # Взять(создать) на сайте https://my.telegram.org
     API_HASH = "API_HASH"          # Взять(создать) на сайте https://my.telegram.org
     ADMIN = ID_OWNER               # ID юзера, владельца бота. Посмотреть в @username_to_id_bot 
-```    
+``` 
+- Установить в папке виртуальное окружение и запустить с nohup что-бы бот продолжал работать без отключения
 ```
 apt install virtualenv
 virtualenv -p python3 venv
 . ./venv/bin/activate
 pip3 install -r requirements.txt
-python3 bot.py
+nohup python3 bot.py &
 ```
 ```
 # Команды пользователя
