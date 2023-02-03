@@ -14,7 +14,7 @@
 - Переименовать sample_config.py в config.py и вставить свои данные токенов и ID владельца бота
 ```
     TG_BOT_TOKEN = "TG_BOT_TOKEN"  # Взять в боте @BotFather
-    APP_ID = APP_ID                # Взять(создать) на сайте https://my.telegram.org
+    API_ID = API_ID                # Взять(создать) на сайте https://my.telegram.org
     API_HASH = "API_HASH"          # Взять(создать) на сайте https://my.telegram.org
     ADMIN = ID_OWNER               # ID юзера, владельца бота. Посмотреть в @username_to_id_bot 
 ``` 
