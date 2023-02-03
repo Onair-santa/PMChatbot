@@ -24,10 +24,6 @@ async def help_me(bot, message):
         text=Presets.USER_DETAILS.format(
             info.first_name,
             info.last_name,
-            info.id, info.username,
-            info.is_scam,
-            info.is_restricted,
-            info.status,
-            info.dc_id
+            info.id, info.username
         )
     )
