@@ -7,8 +7,6 @@
 - Admin отвечает в боте методом *Ответить* *reply to the message* 
 - Команда `/info` - более полная информация о написавшем сообщение.(Admin Only)
 
-# Deploying on Heroku:
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/anvikVRN/PMChatbot-RU)
 # Linux VPS:
 - Создать папку бота на сервере и скопировать туда файлы бота
 - Переименовать sample_config.py в config.py и вставить свои данные токенов и ID владельца бота
