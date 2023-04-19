@@ -27,7 +27,7 @@ python3 bot.py
 - Включение службы и автозапуска
 cd /etc/systemd/system/
 nano pmchat.service
-
+```
 [Unit]
 Description=pmchat
 After=network.target
