@@ -19,7 +19,7 @@ async def pm_text(bot, message):
     reference_id = int(message.chat.id)
     await bot.send_message(
         chat_id=Config.ADMIN,
-        text=Presets.PM_TXT_ATT.format(reference_id, info.first_name, message.text),
+        text=Presets.PM_TXT_ATT.format(reference_id, info.first_name, info.username, message.text),
         parse_mode="html"
     )
 
