@@ -25,6 +25,7 @@ pip3 install -r requirements.txt
 python3 bot.py
 ```
 - Включение службы и автозапуска
+```
 cd /etc/systemd/system/
 nano pmchat.service
 ```
@@ -41,14 +42,18 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 ```
+```
 sudo systemctl start pmchat
 sudo systemctl stop pmchat
 sudo systemctl restart pmchat
 sudo systemctl status pmchat
 ```
 # Команды пользователя бота
+```
 /start или /help - Приветствие
+```
 # Команды Админа
+```
 /info - Информация о пользователе
 ```
 
