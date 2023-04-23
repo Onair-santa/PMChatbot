@@ -1,12 +1,12 @@
 # 📥 PMChatBot 
 Simple PM-bot
- 💠 USAGE
+# 💠 USAGE
 
 - Users can pm to the bot via text or media messages
 - Bot will send the message to the admin user id as pm.
 - The replied message will be sent to the user as pm in the bot.
 
- 💠 Linux VPS install:
+# 💠 Linux VPS install:
 - Rename sample_config.py and change config.py
 ```
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN","38928:G2y9Vo")  #  @BotFather
