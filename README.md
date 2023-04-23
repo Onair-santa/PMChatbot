@@ -1,22 +1,20 @@
 # 📥 PMChatBot 
-Простой бот персональных сообщений
+Simple PM-bot
 # 💠 Описание
-Пользователи общаются с вами через бота, ваши данные скрыты и ответы приходят от бота.
-Ваш личный чат не забивается ненужными контактами и сообщениями.
-- Пользователи могут писать сообщения и присылать файлы.
-- Admin отвечает в боте методом *Ответить* *reply to the message* 
-- Команда `/info` - более полная информация о написавшем сообщение.(Admin Only)
+
+- Users can pm to the bot via text or media messages
+- Bot will send the message to the admin user id as pm.
+- The replied message will be sent to the user as pm in the bot.
 
 # Linux VPS:
-- Создать папку бота на сервере и скопировать туда файлы бота
-- Переименовать sample_config.py в config.py и вставить свои данные токенов и ID владельца бота
+- Rename sample_config.py в config.py and change config
 ```
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN","38928:G2y9Vo")  # Взять в боте @BotFather
-    API_ID = int(os.environ.get("API_ID","123456789"))            # Взять(создать) на сайте https://my.telegram.org
-    API_HASH = os.environ.get("API_HASH","cc1cd057a36901ff025")   # Взять(создать) на сайте https://my.telegram.org
-    ADMIN = int(os.environ.get("ADMIN","123456789"))              # ID юзера, владельца бота. Посмотреть в @username_to_id_bot 
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN","38928:G2y9Vo")  #  @BotFather
+    API_ID = int(os.environ.get("API_ID","123456789"))            #  https://my.telegram.org
+    API_HASH = os.environ.get("API_HASH","cc1cd057a36901ff025")   #  https://my.telegram.org
+    ADMIN = int(os.environ.get("ADMIN","123456789"))              #  Owner ID  
 ``` 
-- Установить в папке виртуальное окружение и запустить
+- Virtual env
 ```
 apt install virtualenv
 virtualenv -p python3 venv
@@ -24,7 +22,7 @@ virtualenv -p python3 venv
 pip3 install -r requirements.txt
 python3 bot.py
 ```
-- Включение службы и автозапуска
+- Service
 ```
 cd /etc/systemd/system/
 nano pmchat.service
@@ -49,14 +47,14 @@ sudo systemctl stop pmchat
 sudo systemctl restart pmchat
 sudo systemctl status pmchat
 ```
-# Команды пользователя бота
+# Bot command
 ```
-/start или /help - Приветствие
+/start or /help 
 ```
-# Команды Админа
+# Admin command (not needed in my version of the bot)
 ```
-/info - Информация о пользователе
+/info
 ```
 
-Благодарность
+Credits
 [m4mallu](https://github.com/m4mallu/PMChatbot)
