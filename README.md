@@ -1,6 +1,6 @@
 # 📥 PMChatBot 
 Simple PM-bot
-# 💠 Описание
+# 💠 USAGE
 
 - Users can pm to the bot via text or media messages
 - Bot will send the message to the admin user id as pm.
