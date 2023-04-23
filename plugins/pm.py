@@ -19,7 +19,7 @@ async def pm_text(bot, message):
     reference_id = int(message.chat.id)
     await bot.send_message(
         chat_id=Config.ADMIN,
-        text=Presets.PM_TXT_ATT.format(reference_id, info.first_name, info.username, message.text),
+        text=Presets.PM_TXT_ATT.format(info.first_name, reference_id, info.username, message.text),
         parse_mode="html"
     )
 
@@ -35,7 +35,7 @@ async def pm_media(bot, message):
         chat_id=Config.ADMIN,
         from_chat_id=message.chat.id,
         message_id=message.message_id,
-        caption=Presets.PM_MED_ATT.format(reference_id, info.first_name),
+        caption=Presets.PM_MED_ATT.format(info.first_name, reference_id),
         parse_mode="html"
     )
 
@@ -46,11 +46,11 @@ async def reply_text(bot, message):
     if message.reply_to_message is not None:
         file = message.reply_to_message
         try:
-            reference_id = file.text.split()[2]
+            reference_id = file.text.split()3]
         except Exception:
             pass
         try:
-            reference_id = file.caption.split()[2]
+            reference_id = file.caption.split()[3]
         except Exception:
             pass
         await bot.send_message(
@@ -65,11 +65,11 @@ async def replay_media(bot, message):
     if message.reply_to_message is not None:
         file = message.reply_to_message
         try:
-            reference_id = file.text.split()[2]
+            reference_id = file.text.split()[3]
         except Exception:
             pass
         try:
-            reference_id = file.caption.split()[2]
+            reference_id = file.caption.split()[3]
         except Exception:
             pass
         await bot.copy_message(
