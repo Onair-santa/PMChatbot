@@ -7,7 +7,7 @@ Simple PM-bot
 - The replied message will be sent to the user as pm in the bot.
 
 # Linux VPS:
-- Rename sample_config.py в config.py and change config
+- Rename sample_config.py and change config.py
 ```
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN","38928:G2y9Vo")  #  @BotFather
     API_ID = int(os.environ.get("API_ID","123456789"))            #  https://my.telegram.org
