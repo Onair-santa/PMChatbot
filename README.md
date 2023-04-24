@@ -1,12 +1,12 @@
 # 📥 PMChatBot 
 Simple PM-bot
-# 💠 USAGE
+## 💠 USAGE
 
 - Users can pm to the bot via text or media messages
 - Bot will send the message to the admin user id as pm.
 - The replied message will be sent to the user as pm in the bot.
 
-# 💠 Install on Linux VPS :
+## 💠 Install on Linux VPS :
 - Rename sample_config.py and change config.py
 ```
     TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN","38928:G2y9Vo")  #  @BotFather
@@ -47,14 +47,14 @@ sudo systemctl stop pmchat
 sudo systemctl restart pmchat
 sudo systemctl status pmchat
 ```
- 💠Bot command
+ ##💠Bot command
 ```
 /start or /help 
 ```
- 💠Admin command (not needed in my version of the bot)
+## 💠Admin command (not needed in my version of the bot)
 ```
 /info
 ```
 
- 💠Credits
+ ##💠Credits
 [m4mallu](https://github.com/m4mallu/PMChatbot)
