@@ -47,14 +47,14 @@ sudo systemctl stop pmchat
 sudo systemctl restart pmchat
 sudo systemctl status pmchat
 ```
- ##💠Bot command
+💠Bot command
 ```
 /start or /help 
 ```
-## 💠Admin command (not needed in my version of the bot)
+💠Admin command (not needed in my version of the bot)
 ```
 /info
 ```
 
- ##💠Credits
+💠Credits
 [m4mallu](https://github.com/m4mallu/PMChatbot)
