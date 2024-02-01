@@ -42,6 +42,7 @@ Restart=always
 WantedBy=multi-user.target
 ```
 ```
+sudo systemctl enable pmchat
 sudo systemctl start pmchat
 sudo systemctl stop pmchat
 sudo systemctl restart pmchat
@@ -49,7 +50,7 @@ sudo systemctl status pmchat
 ```
 💠Bot command
 ```
-/start or /help 
+/start
 ```
 💠Admin command (not needed in my version of the bot)
 ```
