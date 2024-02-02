@@ -74,3 +74,23 @@ async def replay_media(bot, message):
             from_chat_id=message.chat.id,
             message_id=message.id
         )
+
+@Client.on_message(filters.user(Config.ADMIN)) & filters.sticker)
+async def replay_media(bot, message):
+    reference_id = True
+    if message.reply_to_message is not None:
+        file = message.reply_to_message
+        try:
+            reference_id = file.text.split()[2]
+        except Exception:
+            pass
+        try:
+            reference_id = file.caption.split()[2]
+        except Exception:
+            pass
+        await bot.copy_message(
+            chat_id=int(reference_id),
+            from_chat_id=message.chat.id,
+            message_id=message.id
+        ) 
+ 
